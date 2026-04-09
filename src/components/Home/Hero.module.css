@@ -1,0 +1,281 @@
+.hero {
+  min-height: 100vh;
+  background: var(--color-ink);
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--nav-height);
+}
+
+.heroBgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+}
+
+.heroBgGlow {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(184, 151, 90, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroRule {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  bottom: 15%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(184, 151, 90, 0.2), transparent);
+  pointer-events: none;
+}
+
+.heroInner {
+  min-height: calc(100vh - var(--nav-height));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+  padding: var(--space-16) 0;
+  position: relative;
+  z-index: 1;
+}
+
+.heroText {
+  color: var(--color-white);
+}
+
+.heroEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-6);
+}
+
+.heroEyebrowLine {
+  width: 28px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.heroHeadline {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  margin-bottom: var(--space-6);
+}
+
+.heroHeadline em {
+  font-style: italic;
+  color: var(--color-gold-light);
+}
+
+.heroSubheadline {
+  font-size: var(--text-lg);
+  color: var(--color-slate-light);
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: var(--space-10);
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.heroStats {
+  display: flex;
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.heroStatValue {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+.heroStatLabel {
+  font-size: var(--text-xs);
+  color: var(--color-slate-light);
+  letter-spacing: 0.05em;
+  margin-top: var(--space-1);
+}
+
+.heroVisual {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.heroCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  width: 100%;
+  max-width: 440px;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.heroCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.heroCardTitle {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-slate-light);
+}
+
+.heroCardBadge {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.05em;
+}
+
+.heroCardMetric {
+  margin-bottom: var(--space-6);
+}
+
+.heroCardMetricValue {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-3xl), 5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.heroCardMetricChange {
+  font-size: var(--text-sm);
+  color: #22c55e;
+  margin-top: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.heroCardChart {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-2);
+  height: 80px;
+  margin-bottom: var(--space-6);
+}
+
+.heroCardBar {
+  flex: 1;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  background: rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroCardBar::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  background: linear-gradient(to top, var(--color-gold), rgba(184, 151, 90, 0.3));
+  border-radius: inherit;
+  height: var(--bar-h, 40%);
+}
+
+.heroCardKpis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.heroCardKpi {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+}
+
+.heroCardKpiLabel {
+  font-size: var(--text-xs);
+  color: var(--color-slate-light);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-1);
+}
+
+.heroCardKpiValue {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.heroCardFloat {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: var(--color-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-gold);
+}
+
+.heroCardFloatIcon {
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+.heroCardFloatText {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: var(--space-1);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .heroVisual {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroStats,
+  .heroActions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

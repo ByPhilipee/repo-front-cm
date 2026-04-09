@@ -1,0 +1,49 @@
+.servicesSection {
+  background: var(--color-ink);
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
+.servicesSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(184, 151, 90, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(26, 61, 43, 0.08) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.servicesSection :global(.section-title) {
+  color: var(--color-white);
+}
+
+.servicesSection :global(.section-subtitle) {
+  color: var(--color-slate-light);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-16);
+}
+
+.servicesAction {
+  text-align: center;
+  margin-top: var(--space-12);
+}
+
+@media (max-width: 1200px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
