@@ -1,0 +1,42 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+.control {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-white);
+  color: var(--color-ink);
+  padding: 0.95rem 1rem;
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.control::placeholder {
+  color: var(--color-slate-mid);
+}
+
+.control:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 4px rgba(184, 151, 90, 0.12);
+  outline: none;
+}
+
+.error {
+  color: #b42318;
+  font-size: var(--text-xs);
+}
+

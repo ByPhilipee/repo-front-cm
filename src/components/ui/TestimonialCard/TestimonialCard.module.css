@@ -1,0 +1,68 @@
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-8);
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-spring);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-fog);
+  transform: translateX(4px);
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-ink);
+  line-height: 1.55;
+  margin-bottom: var(--space-4);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-white);
+  flex-shrink: 0;
+}
+
+.name {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.role {
+  font-size: var(--text-xs);
+  color: var(--color-slate-mid);
+  margin-top: 2px;
+}
+
+.stars {
+  margin-left: auto;
+  color: var(--color-gold);
+  letter-spacing: 1px;
+  font-size: var(--text-sm);
+}
+

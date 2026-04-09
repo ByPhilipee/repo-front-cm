@@ -1,0 +1,158 @@
+.footer {
+  background: var(--color-ink);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.top {
+  padding: var(--space-16) 0 var(--space-12);
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+  gap: var(--space-12);
+}
+
+.brand {
+  max-width: 340px;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: var(--space-4);
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.tagline {
+  font-size: var(--text-sm);
+  color: var(--color-slate-light);
+  line-height: 1.75;
+  margin-bottom: var(--space-5);
+}
+
+.cnpj {
+  font-size: var(--text-xs);
+  color: var(--color-slate-mid);
+  margin-bottom: var(--space-5);
+}
+
+.socials {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.socialButton {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-slate-light);
+  font-size: 0.9rem;
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.socialButton:hover {
+  background: rgba(184, 151, 90, 0.15);
+  border-color: rgba(184, 151, 90, 0.3);
+  color: var(--color-gold);
+}
+
+.title {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: var(--space-5);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.link {
+  font-size: var(--text-sm);
+  color: var(--color-slate-light);
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-white);
+}
+
+.address {
+  font-style: normal;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-slate-light);
+  line-height: 1.5;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: var(--space-6) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-size: var(--text-xs);
+  color: var(--color-slate-mid);
+}
+
+.legal {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.legal a {
+  font-size: var(--text-xs);
+  color: var(--color-slate-mid);
+}
+
+.legal a:hover {
+  color: var(--color-white);
+}
+
+@media (max-width: 992px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+}
+

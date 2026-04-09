@@ -1,0 +1,170 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  min-height: var(--nav-height);
+  background: rgba(250, 251, 253, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border);
+  transition: box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.inner {
+  min-height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 38px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-slate);
+  letter-spacing: 0.02em;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  position: relative;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: var(--space-4);
+  right: var(--space-4);
+  height: 1.5px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--transition-base);
+}
+
+.link:hover,
+.active {
+  color: var(--color-ink);
+}
+
+.link:hover::after,
+.active::after {
+  transform: scaleX(1);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.cta {
+  padding-inline: 1.2rem;
+}
+
+.portal {
+  text-transform: none;
+  letter-spacing: 0.03em;
+  gap: 0.45rem;
+}
+
+.toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-md);
+  color: var(--color-ink);
+  padding: var(--space-2);
+}
+
+.toggle:hover {
+  background: var(--color-mist);
+}
+
+.toggle svg {
+  width: 22px;
+  height: 22px;
+}
+
+.mobile {
+  display: none;
+  position: fixed;
+  inset: var(--nav-height) 0 auto 0;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-4) var(--space-6);
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mobileOpen {
+  display: flex;
+}
+
+.mobileLink {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-slate);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.mobileLink:hover,
+.mobileLinkActive {
+  color: var(--color-ink);
+  background: var(--color-mist);
+}
+
+.mobileActions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.mobileButton {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  .toggle {
+    display: inline-flex;
+  }
+}
+
