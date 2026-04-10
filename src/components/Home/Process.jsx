@@ -31,6 +31,7 @@ export default function Process() {
         <SectionHeader
           align="center"
           eyebrow="Como trabalhamos"
+          titleClassName="text-white"
           title={
             <>
               Do primeiro contato

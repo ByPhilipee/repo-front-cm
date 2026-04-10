@@ -5,11 +5,15 @@ export default function SectionHeader({
   title,
   subtitle,
   align = 'left',
+  variant = 'default',
+  titleClassName = '',
+  subtitleClassName = '',
   className = '',
 }) {
   const containerClassName = [
     styles.header,
     align === 'center' ? styles.center : '',
+    variant !== 'default' ? styles[variant] : '',
     className,
   ]
     .filter(Boolean)
@@ -18,9 +22,8 @@ export default function SectionHeader({
   return (
     <div className={containerClassName}>
       {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-      <h2 className="section-title">{title}</h2>
-      {subtitle ? <p className="section-subtitle">{subtitle}</p> : null}
+      <h2 className={`section-title ${titleClassName}`}>{title}</h2>
+      {subtitle ? <p className={`section-subtitle ${subtitleClassName}`}>{subtitle}</p> : null}
     </div>
   );
 }
-
