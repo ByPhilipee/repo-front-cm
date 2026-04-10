@@ -8,7 +8,9 @@
 .valueAction {
   margin-top: var(--space-8);
 }
-
+.approach{
+  background-color: var(--color-white);
+}
 .pillarsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;

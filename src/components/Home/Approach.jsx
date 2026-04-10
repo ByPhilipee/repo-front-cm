@@ -27,7 +27,7 @@ const pillars = [
 
 export default function Approach() {
   return (
-    <section className="section-padding">
+    <section className={`section-padding ${styles.approach}`}>
       <div className="container-main">
         <div className={styles.valueGrid}>
           <div>
@@ -45,7 +45,6 @@ export default function Approach() {
             <div className={styles.valueAction}>
               <Button to="/servicos">
                 Conheça nossa metodologia
-                <i className="bi bi-arrow-right" aria-hidden="true" />
               </Button>
             </div>
           </div>
