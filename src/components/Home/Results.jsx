@@ -1,5 +1,4 @@
 import SectionHeader from '../ui/SectionHeader/SectionHeader';
-import MetricCard from '../ui/MetricCard/MetricCard';
 import TestimonialCard from '../ui/TestimonialCard/TestimonialCard';
 import styles from './Results.module.css';
 
@@ -51,24 +50,21 @@ export default function Results() {
     <section className="section-padding surface-light" aria-labelledby="authority-title">
       <div className="container-main">
         <SectionHeader eyebrow="Resultados concretos" title="Números que falam por nós." />
-
-        <div className={styles.authorityGrid}>
-          <div className={styles.metricsGrid} role="list" aria-label="Métricas de desempenho">
-            {metrics.map((metric) => (
-              <div key={metric.label} role="listitem">
-                <MetricCard value={metric.value} label={metric.label} />
-              </div>
-            ))}
-          </div>
-
-          <div className={styles.testimonialStack} role="list" aria-label="Depoimentos de clientes">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.name} role="listitem">
-                <TestimonialCard {...testimonial} />
-              </div>
-            ))}
-          </div>
-        </div>
+<div
+  className="row g-4 mt-3"
+  role="list"
+  aria-label="Depoimentos de clientes"
+>
+  {testimonials.map((testimonial) => (
+    <div
+      key={testimonial.name}
+      className="col-12 col-md-6 col-lg-4"
+      role="listitem"
+    >
+      <TestimonialCard {...testimonial} />
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
