@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import useToggle from '../../../hooks/useToggle';
 import Button from '../../ui/Button/Button';
 import { company, navItems } from '../../../utils/site';
-import logoUrl from '../../../assets/logo.svg';
+import logoUrl from '../../../assets/logo8.svg';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -64,11 +64,7 @@ export default function Navbar() {
             </ul>
 
             <div className={styles.actions}>
-              <Button to="/contato" variant="secondary" className={styles.cta}>
-                Falar com especialista
-              </Button>
-              <Button href={company.portal} variant="nav" className={styles.portal}>
-                <i className="bi bi-person-circle" aria-hidden="true" />
+              <Button href={company.portal} variant="primary" className={styles.portal}>
                 Portal do Cliente
               </Button>
             </div>

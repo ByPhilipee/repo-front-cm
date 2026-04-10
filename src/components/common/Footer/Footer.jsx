@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { company, navItems, socialLinks } from '../../../utils/site';
-import logoUrl from '../../../assets/logo.svg';
+import logoUrl from '../../../assets/logo8.svg';
 import styles from './Footer.module.css';
 
 export default function Footer() {

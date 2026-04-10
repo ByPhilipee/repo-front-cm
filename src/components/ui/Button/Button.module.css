@@ -5,7 +5,7 @@
   gap: var(--space-2);
   border: 0;
   border-radius: var(--radius-md);
-  padding: 0.875rem var(--space-8);
+  padding: 0.5rem var(--space-4);
   font-size: var(--text-sm);
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -31,7 +31,7 @@
 .primary:hover {
   color: var(--color-white);
   background: var(--color-gold-light);
-  box-shadow: var(--shadow-gold);
+  box-shadow: var(--shadow-md);
 }
 
 .secondary {
