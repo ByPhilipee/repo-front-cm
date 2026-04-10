@@ -42,11 +42,7 @@ export default function Approach() {
               }
               subtitle="Integramos contabilidade, BPO financeiro e consultoria em uma visão unificada do seu negócio. Você tem um parceiro, não apenas um fornecedor."
             />
-            <div className={styles.valueAction}>
-              <Button to="/servicos">
-                Conheça nossa metodologia
-              </Button>
-            </div>
+
           </div>
 
           <div className={styles.pillarsGrid} role="list" aria-label="Pilares da nossa abordagem">
