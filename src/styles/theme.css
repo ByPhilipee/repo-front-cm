@@ -186,7 +186,7 @@ h6 {
 }
 
 .section-subtitle {
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
   color: var(--color-slate-mid);
   line-height: 1.7;
   margin-top: var(--space-4);

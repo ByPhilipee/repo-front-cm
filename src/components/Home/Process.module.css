@@ -13,7 +13,7 @@
   left: calc(12.5% + 24px);
   right: calc(12.5% + 24px);
   height: 1px;
-  background: linear-gradient(90deg, var(--color-gold-dim), var(--color-gold), var(--color-gold-dim));
+  background: var(--color-gold);
   z-index: 0;
 }
 
@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--space-6);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-xl);
   font-weight: 700;
   color: var(--color-ink);
@@ -51,7 +51,7 @@
 
 .processText {
   font-size: var(--text-sm);
-  color: var(--color-slate-mid);
+  color: var(--color-white);
   line-height: 1.65;
 }
 

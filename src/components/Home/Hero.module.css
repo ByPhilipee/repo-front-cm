@@ -65,7 +65,7 @@
 }
 
 .heroSubheadline {
-  font-size: var(--text-sm);
+  font-size: var(--text-md);
   margin-top: var(--space-4);
   color: var(--color-slate-light);
   line-height: 1.75;
