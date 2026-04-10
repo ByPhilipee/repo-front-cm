@@ -15,9 +15,7 @@ export default function TestimonialCard({ quote, name, role, initials }) {
           <p className={styles.role}>{role}</p>
         </div>
 
-        <div className={styles.stars} aria-label="5 estrelas">
-          ★★★★★
-        </div>
+
       </footer>
     </blockquote>
   );
