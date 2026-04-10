@@ -73,7 +73,6 @@ export default function ServicesSection() {
         <div className={styles.servicesAction}>
           <Button to="/servicos" variant="ghost">
             Ver tabela completa de serviços
-            <i className="bi bi-arrow-right" aria-hidden="true" />
           </Button>
         </div>
       </div>

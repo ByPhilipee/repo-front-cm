@@ -11,10 +11,6 @@ export default function ServiceCard({
 }) {
   return (
     <article className={[styles.card, className].filter(Boolean).join(' ')} {...props}>
-      <div className={styles.number}>{number}</div>
-      <div className={styles.icon} aria-hidden="true">
-        <i className={`bi ${icon}`} />
-      </div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.text}>{text}</p>
       {tags.length ? (
