@@ -20,17 +20,19 @@ export default function CTA() {
             </p>
           </div>
 
-          <div className={styles.ctaActions}>
-            <Button to="/contato">
-              Agendar diagnóstico gratuito
-              <i className="bi bi-calendar-check" aria-hidden="true" />
-            </Button>
-            <Button href="https://wa.me/message/5R23HSIBPPADA1" variant="ghost">
-              <i className="bi bi-whatsapp" aria-hidden="true" />
-              WhatsApp direto
-            </Button>
-            <p className={styles.ctaNote}>Retorno em até 24 horas úteis.</p>
-          </div>
+          <div className={`${styles.ctaActions} d-flex flex-column`}>
+  <Button to="/contato" className="w-100">
+    Agendar Reunião
+  </Button>
+
+  <Button
+    href="https://wa.me/message/5R23HSIBPPADA1"
+    variant="ghost"
+    className="w-100"
+  >
+    WhatsApp
+  </Button>
+</div>
         </div>
       </div>
     </section>
