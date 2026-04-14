@@ -1,3 +1,11 @@
+.processSection {
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
 .processSteps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -28,23 +36,21 @@
   height: 64px;
   border-radius: var(--radius-full);
   background: var(--color-white);
-  border: 2px solid var(--color-border-strong);
+  border: 1px solid var(--color-gold);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--space-6);
   font-family: var(--font-body);
   font-size: var(--text-xl);
-  font-weight: 700;
-  color: var(--color-black);
+  color: var(--color-slate-mid);
   box-shadow: var(--shadow-sm);
 }
 
 .processTitle {
   font-family: var(--font-display);
   font-size: var(--text-base);
-  font-weight: 700;
-  color: var(--color-black);
+  color: var(--color-slate-mid);
   margin-bottom: var(--space-2);
   line-height: 1.3;
 }

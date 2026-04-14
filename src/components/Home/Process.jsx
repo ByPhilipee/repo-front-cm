@@ -4,7 +4,7 @@ import styles from './Process.module.css';
 const steps = [
   {
     number: '1',
-    title: 'Diagnóstico gratuito',
+    title: 'Diagnóstico',
     text: 'Entendemos a empresa, a estrutura fiscal e os desafios atuais sem compromisso.',
   },
   {
@@ -26,12 +26,12 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="section-padding" aria-labelledby="process-title">
+    <section className={styles.processSection} aria-labelledby="process-title">
       <div className="container-main">
         <SectionHeader
           align="center"
           eyebrow="Como trabalhamos"
-          titleClassName="text-white"
+          
           title={
             <>
               Do primeiro contato
