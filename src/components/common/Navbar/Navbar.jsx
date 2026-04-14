@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import useToggle from '../../../hooks/useToggle';
 import Button from '../../ui/Button/Button';
 import { company, navItems } from '../../../utils/site';
-import logoUrl from '../../../assets/logo8.svg';
+import logoUrl from '../../../assets/logo_cm.svg';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
