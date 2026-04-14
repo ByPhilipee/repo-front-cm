@@ -20,8 +20,8 @@
   --color-surface-2: #eceef5;
   --color-surface-3: #f3f3ee;
   --color-surface-4: #d1d1c4;
-  --color-border: rgba(58, 69, 96, 0.12);
-  --color-border-strong: rgba(58, 69, 96, 0.25);
+  --color-border: rgba(90, 90, 90, 0.12);
+  --color-border-strong: rgba(95, 95, 95, 0.25);
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;

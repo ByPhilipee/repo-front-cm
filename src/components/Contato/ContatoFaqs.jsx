@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './ContatoFaqs.module.css';
+import SectionHeader from '../ui/SectionHeader/SectionHeader';
 
 export default function ContatoFaqs({ faqs }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -7,15 +8,17 @@ export default function ContatoFaqs({ faqs }) {
   return (
     <section className={`section-padding surface-light ${styles.section}`}>
       <div className="container-main">
+        <div className='mb-5'>
+                  <SectionHeader
+                  align="center"
+                  eyebrowStyle="framed"
+                    eyebrow="Perguntas rápidas"
+                    title="Tudo que você precisa saber antes de enviar"
+                    subtitle="Reunimos algumas respostas curtas para deixar o primeiro contato mais objetivo e
+              reduzir idas e vindas."
+                  />
+         </div>
         <div className={styles.card}>
-          <div className={styles.header}>
-            <p className="eyebrow">Perguntas rápidas</p>
-            <h2 className={styles.title}>Tudo que você precisa saber antes de enviar</h2>
-            <p className={styles.subtitle}>
-              Reunimos algumas respostas curtas para deixar o primeiro contato mais objetivo e
-              reduzir idas e vindas.
-            </p>
-          </div>
 
           <div className={styles.list}>
             {faqs.map((faq) => {

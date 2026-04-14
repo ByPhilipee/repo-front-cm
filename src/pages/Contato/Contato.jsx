@@ -27,6 +27,16 @@ const contactTopics = [
     label: 'Abertura de Empresa',
     hint: 'CNPJ, enquadramento e organização inicial do negócio.',
   },
+  {
+    id: 'troca-contabilidade',
+    label: 'Troca de Contabilidade',
+    hint: 'Migração organizada sem perder prazos nem histórico.',
+  },
+  {
+    id: 'regularizacao-fiscal',
+    label: 'Regularização Fiscal',
+    hint: 'Pendências, ajustes e retomada da conformidade.',
+  },
 ];
 
 const faqs = [
@@ -44,6 +54,31 @@ const faqs = [
     question: 'O que devo informar na mensagem?',
     answer:
       'Explique o porte da empresa, o momento atual e o que você quer resolver. Isso ajuda a direcionar a conversa.',
+  },
+  {
+    question: 'Vocês ajudam na troca de contador?',
+    answer:
+      'Sim. Podemos orientar a migração e organizar os documentos para a transição acontecer com menos atrito.',
+  },
+  {
+    question: 'Vocês cuidam de pendências fiscais ou atrasos?',
+    answer:
+      'Cuidamos do diagnóstico e da regularização para entender o cenário e definir o melhor caminho de retomada.',
+  },
+  {
+    question: 'Em quanto tempo vocês retornam o contato?',
+    answer:
+      'Nosso prazo padrão é de até 24 horas úteis, mas mensagens com mais contexto tendem a ser respondidas com mais objetividade.',
+  },
+  {
+    question: 'Preciso saber exatamente qual serviço contratar?',
+    answer:
+      'Não. Se você ainda estiver em dúvida, descreva o problema e o momento do negócio. Nós ajudamos a enquadrar a melhor frente.',
+  },
+  {
+    question: 'Vocês atendem empresas que estão começando agora?',
+    answer:
+      'Sim. Abertura de empresa, estrutura contábil e organização financeira fazem parte do tipo de apoio que oferecemos.',
   },
 ];
 

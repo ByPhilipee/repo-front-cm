@@ -2,9 +2,7 @@
   position: relative;
   overflow: hidden;
   padding: calc(var(--nav-height) + var(--space-16)) 0 var(--space-12);
-  background:
-    radial-gradient(circle at top right, rgba(184, 151, 90, 0.18), transparent 34%),
-    linear-gradient(180deg, var(--color-black) 0%, #23282a 100%);
+  background:var(--color-surface);
 }
 
 .hero::before {
@@ -36,14 +34,14 @@
   font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
   line-height: 1.04;
   letter-spacing: -0.035em;
-  color: var(--color-white);
+  color: var(--color-black);
   margin-top: var(--space-4);
   max-width: 12ch;
 }
 
 .heroTitle span {
   display: block;
-  color: var(--color-gold-light);
+  color: var(--color-gold);
 }
 
 .heroSubtitle {
@@ -51,7 +49,7 @@
   max-width: 620px;
   font-size: var(--text-md);
   line-height: 1.75;
-  color: rgba(250, 251, 253, 0.75);
+  color: var(--color-black);
 }
 
 .quickActions {
@@ -64,7 +62,7 @@
 .heroCard {
   border-radius: calc(var(--radius-xl) + 0.25rem);
   padding: var(--space-8);
-  background: linear-gradient(180deg, rgba(20, 25, 35, 0.95) 0%, rgba(12, 15, 20, 0.98) 100%);
+  background: var(--color-black);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--shadow-lg);
 }
@@ -86,6 +84,7 @@
 }
 
 .heroCardText {
+  font-size: var(--text-md);
   margin-top: var(--space-4);
   color: rgba(250, 251, 253, 0.72);
   line-height: 1.7;
