@@ -24,7 +24,6 @@ export default function ContatoHero({ company }) {
             <div className={styles.quickActions}>
               <Button href={company.whatsapp} variant="primary">
                 Falar no WhatsApp
-                <i className="bi bi-whatsapp" aria-hidden="true" />
               </Button>
               <Button href={`mailto:${company.email}`} variant="secondary">
                 Enviar e-mail
@@ -66,8 +65,8 @@ export default function ContatoHero({ company }) {
                   <i className="bi bi-geo-alt" />
                 </span>
                 <div>
-                  <span className={styles.contactLabel}>Base</span>
-                  <strong>{company.city}</strong>
+                  <span className={styles.contactLabel}>Endereço</span>
+                  <strong>{company.address}</strong>
                 </div>
               </div>
             </div>
