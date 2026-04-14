@@ -7,12 +7,11 @@ export default function Hero() {
 
 
       <div className="container-main position-relative z-1">
-        <div className="row align-items-center justify-content-center py-4">
+        <div className="row min-vh-100 align-items-center justify-content-center py-5">
           <div className="col-lg-10 col-xl-8 text-center">
             <p className={`${styles.heroEyebrow} d-inline-flex align-items-center mb-4`}>
               <span className={`${styles.heroEyebrowLine} me-3`} aria-hidden="true" />
-              C&M Contabilidade & BPO Financeiro
-              <span className={`${styles.heroEyebrowLine} ms-3`} aria-hidden="true" />
+              Contabilidade & BPO Financeiro
             </p>
 
             <h1 id="hero-headline" className={styles.heroHeadline}>
@@ -23,14 +22,14 @@ export default function Hero() {
               da sua empresa.
             </h1>
 
-            <p className={`${styles.heroSubheadline} mb-3 mx-auto`}>
+            <p className={`${styles.heroSubheadline} mb-5 opacity-75 mx-auto`}>
               Assumimos a complexidade financeira e contábil do seu negócio para que você foque
               no que realmente importa: crescer com consistência e decisões mais seguras.
             </p>
 
-            <div className="d-flex flex-wrap justify-content-center gap-3 mb-4">
+            <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
               <Button to="/contato">
-                Agendar uma reunião
+                Solicitar diagnóstico gratuito
               </Button>
               <Button to="/servicos" variant="ghost">
                 Ver todos os serviços
