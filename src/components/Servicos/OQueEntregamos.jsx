@@ -128,9 +128,10 @@ export default function OQueEntregamos() {
     <section className={styles.section}>
       <div className="container-main">
         <SectionHeader
+          align="center"
           eyebrow="O que entregamos"
-          title="Serviços apresentados com clareza, em formato de leitura rápida."
-          subtitle="Cada card mostra o essencial. Ao clicar, você vê o escopo completo em um modal mais detalhado e profissional."
+          title="Serviços estruturados para dar mais controle, previsibilidade e segurança ao negócio."
+          subtitle="Frentes contábil, financeira e tributária pensadas para apoiar a operação com organização e clareza."
         />
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4 mt-1" role="list" aria-label="Serviços oferecidos">
