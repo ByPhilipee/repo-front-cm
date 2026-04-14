@@ -1,5 +1,6 @@
 import Button from '../ui/Button/Button';
 import Input from '../ui/Input/Input';
+import SectionHeader from '../ui/SectionHeader/SectionHeader';
 import styles from './ContatoFormSection.module.css';
 
 export default function ContatoFormSection({
@@ -17,17 +18,15 @@ export default function ContatoFormSection({
   return (
     <section className={`section-padding surface-light ${styles.formSection}`}>
       <div className="container-main">
+        <div className='mb-5'>
+          <SectionHeader
+            eyebrow="Mensagem guiada"
+            title="Conte o cenário da sua empresa"
+            subtitle="Primeiro você escolhe o foco. Depois, descreve o contexto. O resultado é uma conversa mais rápida e objetiva."
+          />
+        </div>
         <div className={styles.card}>
-          <div className={styles.header}>
-            <div>
-              <p className="eyebrow">Mensagem guiada</p>
-              <h2 className={styles.title}>Conte o cenário da sua empresa</h2>
-            </div>
-            <p className={styles.subtitle}>
-              Primeiro você escolhe o foco. Depois, descreve o contexto. O resultado é uma
-              conversa mais rápida e objetiva.
-            </p>
-          </div>
+          
 
           <div className={styles.topicGrid} role="tablist" aria-label="Escolha o assunto">
             {contactTopics.map((topic) => {
