@@ -130,6 +130,7 @@ export default function OQueEntregamos() {
         <SectionHeader
           align="center"
           eyebrow="O que entregamos"
+          eyebrowStyle="framed"
           title="Serviços estruturados para dar mais controle, previsibilidade e segurança ao negócio."
           subtitle="Frentes contábil, financeira e tributária pensadas para apoiar a operação com organização e clareza."
         />

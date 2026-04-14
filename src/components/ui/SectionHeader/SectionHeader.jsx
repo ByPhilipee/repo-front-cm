@@ -6,6 +6,7 @@ export default function SectionHeader({
   subtitle,
   align = 'left',
   variant = 'default',
+  eyebrowStyle = 'default',
   titleClassName = '',
   subtitleClassName = '',
   className = '',
@@ -19,9 +20,16 @@ export default function SectionHeader({
     .filter(Boolean)
     .join(' ');
 
+  const eyebrowClassName = [
+    'eyebrow',
+    eyebrowStyle !== 'default' ? styles[eyebrowStyle] : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
     <div className={containerClassName}>
-      {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
+      {eyebrow ? <p className={eyebrowClassName}>{eyebrow}</p> : null}
       <h2 className={`section-title ${titleClassName}`}>{title}</h2>
       {subtitle ? <p className={`section-subtitle ${subtitleClassName}`}>{subtitle}</p> : null}
     </div>
