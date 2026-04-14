@@ -14,7 +14,24 @@ export default function Home() {
       <ServicesSection />
       <Results />
       <Process />
-      <CTA />
+      <CTA
+        eyebrow="Próximo passo"
+        title="Pronto para ter uma gestão financeira que realmente funciona?"
+        subtitle="Agende uma conversa de 30 minutos com um dos nossos especialistas. Sem compromisso, sem pressa - só clareza sobre o que podemos fazer pelo seu negócio."
+        actions={[
+          {
+            label: 'Agendar Reunião',
+            to: '/contato',
+            className: 'w-100',
+          },
+          {
+            label: 'WhatsApp',
+            href: 'https://wa.me/message/5R23HSIBPPADA1',
+            variant: 'ghost',
+            className: 'w-100',
+          },
+        ]}
+      />
     </div>
   );
 }
