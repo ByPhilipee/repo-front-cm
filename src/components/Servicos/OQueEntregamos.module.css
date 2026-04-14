@@ -3,21 +3,232 @@
   background: var(--color-surface);
 }
 
-.servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-6);
-  margin-top: var(--space-12);
+:global(body.modal-open) {
+  overflow: hidden;
 }
 
-@media (max-width: 576px) {
-  .servicesGrid {
+.serviceCard {
+  width: 100%;
+  min-height: 100%;
+  border: 0;
+  border-radius: var(--radius-xl);
+  background: var(--color-white);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.serviceCard:focus-visible {
+  outline: 3px solid rgba(184, 151, 90, 0.35);
+  outline-offset: 3px;
+}
+
+.iconWrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: var(--color-gold);
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.35rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.25;
+}
+
+.cardDescription {
+  color: var(--color-slate-mid);
+  line-height: 1.75;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background: rgba(10, 16, 14, 0.68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  backdrop-filter: blur(4px);
+}
+
+.modalDialog {
+  position: relative;
+  width: min(920px, 100%);
+  max-height: min(88vh, 860px);
+  overflow: auto;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-8);
+}
+
+.modalClose {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding-right: 3.25rem;
+}
+
+.modalIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: var(--color-gold);
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.modalEyebrow {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+}
+
+.modalTitle {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl));
+  color: var(--color-black);
+  line-height: 1.15;
+}
+
+.modalLead {
+  margin-top: var(--space-6);
+  color: var(--color-black);
+  line-height: 1.8;
+  max-width: 820px;
+}
+
+.modalGrid {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.modalLabel {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-4);
+}
+
+.modalList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.modalItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: var(--color-black);
+  line-height: 1.65;
+}
+
+.modalBullet {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background: var(--color-gold);
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+}
+
+.modalFooter {
+  margin-top: var(--space-8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.modalNote {
+  color: var(--color-ink);
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+@media (max-width: 991px) {
+  .modalGrid {
     grid-template-columns: 1fr;
+  }
+
+  .modalFooter {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
-@media (min-width: 577px) and (max-width: 992px) {
-  .servicesGrid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 576px) {
+  .serviceCard {
+    padding: var(--space-6);
+    gap: var(--space-3);
+  }
+
+  .modalDialog {
+    padding: var(--space-6);
+  }
+
+  .modalHeader {
+    padding-right: 2.75rem;
+  }
+
+  .iconWrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
   }
 }
