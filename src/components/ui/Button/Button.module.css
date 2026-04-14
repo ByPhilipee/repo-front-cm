@@ -35,7 +35,7 @@
 }
 
 .secondary {
-  color: var(--color-ink);
+  color: var(--color-black);
   background: transparent;
   border: 1.5px solid var(--color-border-strong);
 }
@@ -74,7 +74,7 @@
 
 .nav {
   color: var(--color-white);
-  background: var(--color-ink);
+  background: var(--color-black);
   border: 1px solid rgba(255, 255, 255, 0.04);
   padding: 0.55rem var(--space-5);
   text-transform: none;

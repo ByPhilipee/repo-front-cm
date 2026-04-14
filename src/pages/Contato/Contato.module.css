@@ -16,7 +16,7 @@
 }
 
 .infoCard {
-  background: var(--color-ink);
+  background: var(--color-black);
   color: var(--color-white);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
@@ -96,7 +96,7 @@
   font-family: var(--font-display);
   font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl));
   font-weight: 700;
-  color: var(--color-ink);
+  color: var(--color-black);
   margin-bottom: var(--space-4);
 }
 
@@ -139,7 +139,7 @@
 }
 
 .sideCard {
-  background: linear-gradient(180deg, var(--color-ink) 0%, #141923 100%);
+  background: linear-gradient(180deg, var(--color-black) 0%, #141923 100%);
   color: var(--color-white);
   border-radius: var(--radius-xl);
   padding: var(--space-8);

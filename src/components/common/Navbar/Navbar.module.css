@@ -70,7 +70,7 @@
 
 .link:hover,
 .active {
-  color: var(--color-ink);
+  color: var(--color-black);
 }
 
 .link:hover::after,
@@ -101,7 +101,7 @@
   background: transparent;
   border: 0;
   border-radius: var(--radius-md);
-  color: var(--color-ink);
+  color: var(--color-black);
   padding: var(--space-2);
 }
 
@@ -141,7 +141,7 @@
 
 .mobileLink:hover,
 .mobileLinkActive {
-  color: var(--color-ink);
+  color: var(--color-black);
   background: var(--color-mist);
 }
 

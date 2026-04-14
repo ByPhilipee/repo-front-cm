@@ -1,7 +1,7 @@
 /* Dark Theme */
 :root {
-  --color-ink: #2F3436;
-  --color-ink-muted: #4C5E52;
+  --color-black: #2F3436;
+  --color-black-muted: #4C5E52;
   --color-slate: #3a4560;
   --color-slate-mid: #5d6b8a;
   --color-slate-light: #8e9bb5;
@@ -85,7 +85,7 @@ body {
   font-size: var(--text-base);
   line-height: 1.6;
   color: var(--color-white); /* Text color for dark theme */
-  background: var(--color-ink); /* Background color for dark theme */
+  background: var(--color-black); /* Background color for dark theme */
   overflow-x: hidden;
 }
 
@@ -180,7 +180,7 @@ h6 {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.025em;
-  color: var(--color-ink);
+  color: var(--color-black);
   margin-top: var(--space-4);
 }
 
@@ -209,7 +209,7 @@ h6 {
 }
 
 .surface-dark {
-  background: var(--color-ink);
+  background: var(--color-black);
 }
 
 .card-surface {

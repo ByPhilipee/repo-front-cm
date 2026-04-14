@@ -67,7 +67,7 @@
 .heroSubheadline {
   font-size: var(--text-md);
   margin-top: var(--space-4);
-  color: var(--color-mutted);
+  color: var(--color-slate-mid);
   line-height: 1.75;
   max-width: 650px;
 }
@@ -80,13 +80,13 @@
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--color-mutted);
+  color: var(--color-slate-mid);
   line-height: 1.1;
 }
 
 .heroStatLabel {
   font-size: var(--text-xs);
-  color: var(--color-mutted);
+  color: var(--color-slate-mid);
   letter-spacing: 0.05em;
 }
 

@@ -1,16 +1,15 @@
 /* Dark Theme */
 :root {
-  --color-ink: #0c0f14;
-  --color-ink-muted: #1c2333;
+  --color-black: #1f1d1d;
+  --color-black-muted: #303031;
   --color-slate: #3a4560;
-  --color-slate-mid: #5d6b8a;
-  --color-slate-light: #8e9bb5;
-  --color-fog: #c8cfdd;
+  --color-slate-mid: #808080;
+  --color-slate-light: #b1b0b0;
+  --color-fog: #dddddd;
   --color-mist: #eef0f5;
   --color-white: #fafbfd;
   --color-white-dim: rgba(250, 251, 253, 0.747);
-  --color-black: #1f1d1d;
-  --color-mutted: #6b7280;
+
 
   --color-gold: #b8975a;
   --color-gold-light: #d4af7a;
@@ -91,7 +90,7 @@ body {
   font-size: var(--text-base);
   line-height: 1.6;
   color: var(--color-white); /* Text color for dark theme */
-  background: var(--color-ink); /* Background color for dark theme */
+  background: var(--color-black); /* Background color for dark theme */
   overflow-x: hidden;
 }
 
@@ -186,7 +185,7 @@ h6 {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.025em;
-  color: var(--color-ink);
+  color: var(--color-black);
   margin-top: var(--space-4);
 }
 
@@ -207,7 +206,7 @@ h6 {
 }
 
 .text-mutted {
-  color: var(--color-mutted);
+  color: var(--color-slate-mid);
 }
 
 .text-slate-light {
@@ -219,7 +218,7 @@ h6 {
 }
 
 .surface-dark {
-  background: var(--color-ink);
+  background: var(--color-black);
 }
 
 .card-surface {
