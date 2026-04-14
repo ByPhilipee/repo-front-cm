@@ -31,24 +31,9 @@ export default function Hero() {
               <Button to="/contato">
                 Solicitar diagnóstico gratuito
               </Button>
-              <Button to="/servicos" variant="ghost">
+              <Button to="/servicos" variant="ghost-black">
                 Ver todos os serviços
               </Button>
-            </div>
-
-            <div className={`${styles.heroStats} d-flex flex-wrap justify-content-center gap-md-5 gap-4 pt-4`} role="list" aria-label="Números que nos definem">
-              <div role="listitem">
-                <p className={`${styles.heroStatValue} mb-1`}>+120</p>
-                <p className={`${styles.heroStatLabel} mb-0 opacity-50`}>Empresas atendidas</p>
-              </div>
-              <div className="border-start border-white border-opacity-10 ps-md-5 ps-4" role="listitem">
-                <p className={`${styles.heroStatValue} mb-1`}>98%</p>
-                <p className={`${styles.heroStatLabel} mb-0 opacity-50`}>Taxa de retenção</p>
-              </div>
-              <div className="border-start border-white border-opacity-10 ps-md-5 ps-4" role="listitem">
-                <p className={`${styles.heroStatValue} mb-1`}>10+</p>
-                <p className={`${styles.heroStatLabel} mb-0 opacity-50`}>Anos de expertise</p>
-              </div>
             </div>
           </div>
         </div>

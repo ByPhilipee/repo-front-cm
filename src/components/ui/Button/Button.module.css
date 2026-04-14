@@ -58,6 +58,20 @@
   border-color: rgba(250, 251, 253, 0.6);
 }
 
+.ghost-black {
+  color: var(--color-black);
+  background: transparent;
+  border: 1.5px solid rgba(70, 71, 71, 0.801);
+  transition: all var(--transition-base);
+}
+
+.ghost-black:hover {
+  color: var(--color-gold);
+  background: rgba(250, 251, 253, 0.08);
+  border-color: var(--color-gold);
+}
+
+
 .nav {
   color: var(--color-white);
   background: var(--color-ink);

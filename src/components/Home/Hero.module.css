@@ -1,6 +1,6 @@
 .hero {
   min-height: 100vh;
-  background: var(--color-ink);
+  background: var(--color-surface);
   position: relative;
   overflow: hidden;
   padding-top: var(--nav-height);
@@ -56,7 +56,7 @@
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: -0.03em;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .heroHeadline em {
@@ -67,26 +67,26 @@
 .heroSubheadline {
   font-size: var(--text-md);
   margin-top: var(--space-4);
-  color: var(--color-slate-light);
+  color: var(--color-mutted);
   line-height: 1.75;
   max-width: 650px;
 }
 
 .heroStats {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-white-dim);
 }
 
 .heroStatValue {
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-mutted);
   line-height: 1.1;
 }
 
 .heroStatLabel {
   font-size: var(--text-xs);
-  color: var(--color-slate-light);
+  color: var(--color-mutted);
   letter-spacing: 0.05em;
 }
 

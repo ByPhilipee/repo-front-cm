@@ -8,6 +8,9 @@
   --color-fog: #c8cfdd;
   --color-mist: #eef0f5;
   --color-white: #fafbfd;
+  --color-white-dim: rgba(250, 251, 253, 0.747);
+  --color-black: #1f1d1d;
+  --color-mutted: #6b7280;
 
   --color-gold: #b8975a;
   --color-gold-light: #d4af7a;
@@ -17,6 +20,7 @@
   --color-surface: #ecece0;
   --color-surface-2: #eceef5;
   --color-surface-3: #f3f3ee;
+  --color-surface-4: #d1d1c4;
   --color-border: rgba(58, 69, 96, 0.12);
   --color-border-strong: rgba(58, 69, 96, 0.25);
 
@@ -200,6 +204,10 @@ h6 {
 
 .text-white {
   color: var(--color-white);
+}
+
+.text-mutted {
+  color: var(--color-mutted);
 }
 
 .text-slate-light {

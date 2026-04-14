@@ -16,6 +16,7 @@ export default function ServicosSection() {
         <div className={styles.heroGrid}>
           <SectionHeader
             eyebrow="Serviços"
+            subtitleClassName='text-mutted'
             title={
               <>
                 Estrutura contábil e financeira
@@ -39,15 +40,6 @@ export default function ServicosSection() {
               ))}
             </ul>
 
-            <div className={styles.heroPanelActions}>
-              <Button to="/contato">
-                Solicitar proposta
-                <i className="bi bi-arrow-right" aria-hidden="true" />
-              </Button>
-              <Button to="/" variant="ghost">
-                Voltar para home
-              </Button>
-            </div>
           </div>
         </div>
       </div>
