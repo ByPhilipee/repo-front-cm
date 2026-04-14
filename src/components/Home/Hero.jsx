@@ -11,7 +11,8 @@ export default function Hero() {
           <div className="col-lg-10 col-xl-8 text-center">
             <p className={`${styles.heroEyebrow} d-inline-flex align-items-center mb-4`}>
               <span className={`${styles.heroEyebrowLine} me-3`} aria-hidden="true" />
-              Contabilidade & BPO Financeiro
+              C&M Contabilidade & BPO Financeiro
+              <span className={`${styles.heroEyebrowLine} ms-3`} aria-hidden="true" />
             </p>
 
             <h1 id="hero-headline" className={styles.heroHeadline}>
